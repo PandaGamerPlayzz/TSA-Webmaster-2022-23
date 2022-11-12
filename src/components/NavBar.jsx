@@ -46,8 +46,8 @@ const NavBar = () => {
                     <li className="nav-float-left"><Link id="nav-link-home" className="nav-logo" to={"/"}>Project Astra</Link></li>
                     <li className="nav-center">
                         <ul>
-                            <li className="nav-float-left"><Link id="nav-link-project-earth" to={"/project-earth"}><span>01</span> Project Earth</Link></li>
-                            <li className="nav-float-left"><Link id="nav-link-project-moon" to={"/project-moon"}><span>02</span> Project Moon</Link></li>
+                            <li className="nav-float-left"><Link id="nav-link-project-terra" to={"/project-terra"}><span>01</span> Project Terra</Link></li>
+                            <li className="nav-float-left"><Link id="nav-link-project-luna" to={"/project-luna"}><span>02</span> Project Luna</Link></li>
                         </ul>
                     </li>
                     <li className="nav-float-right">
@@ -63,9 +63,9 @@ const NavBar = () => {
                 <div className="nav-menu-spacing"></div>
                 <div className="nav-menu-links">
                     <ul>
-                        <li><Link id="nav-link-project-earth" className="nav-menu-link" to={"/"}><span>00</span> Home</Link><hr /></li>
-                        <li><Link id="nav-link-project-earth" className="nav-menu-link" to={"/project-earth"}><span>01</span> Project Earth</Link><hr /></li>
-                        <li><Link id="nav-link-project-moon" className="nav-menu-link" to={"/project-moon"}><span>02</span> Project Moon</Link><hr /></li>
+                        <li><Link id="nav-link-home" className="nav-menu-link" to={"/"}><span>00</span> Home</Link><hr /></li>
+                        <li><Link id="nav-link-project-earth" className="nav-menu-link" to={"/project-terra"}><span>01</span> Project Earth</Link><hr /></li>
+                        <li><Link id="nav-link-project-luna" className="nav-menu-link" to={"/project-luna"}><span>02</span> Project Moon</Link><hr /></li>
                     </ul>
                 </div>
             </div>       
