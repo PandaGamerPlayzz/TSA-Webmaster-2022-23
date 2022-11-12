@@ -1,0 +1,100 @@
+.nav-bar {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.nav-bar ul {
+    list-style-type: none;
+    overflow: hidden;
+    /* background-color: #333333; */
+}
+
+.nav-bar li {
+    transition: background-color 0.125s linear;
+}
+
+.nav-bar .nav-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.nav-bar li.nav-float-left {
+    float: left;
+}
+
+.nav-bar li.nav-float-right {
+    float: right;
+}
+
+.nav-bar li > a {
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 19px;
+    margin: 10px 16px;
+    padding: 4px 0;
+    text-decoration: none;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), linear-gradient(#ffffff, #ffffff);
+    background-size: 90% 1px, 0 1px;
+    background-position: 50% calc(100% + 0px);
+    background-repeat: no-repeat;
+    transition: background-size 0.6s cubic-bezier(.19,1,.22,1);
+}
+
+.nav-bar li > a.nav-logo {
+    font-size: 26px;
+}
+
+.nav-bar li > a:hover, .nav-bar li > a:focus {
+    background-size: 0 1px, 90% 1px;
+}
+
+.nav-bar li:has(.hamburger-icon-container) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 25px;
+}
+
+.hamburger-icon-container {
+    cursor: pointer;
+}
+  
+.hamburger-icon-bar1, .hamburger-icon-bar2, .hamburger-icon-bar3 {
+    width: 30px;
+    height: 2px;
+    background-color: #ffffff;
+    margin: 7px 0;
+    transition: 0.25s;
+}
+
+.hamburger-icon-bar2 {
+    transition: 0.25s;
+}
+  
+.hamburger-active .hamburger-icon-bar1 {
+    transform: translate(0, 9px) rotate(-45deg);
+}
+  
+.hamburger-active .hamburger-icon-bar2 {
+    opacity: 0;
+}
+  
+.hamburger-active .hamburger-icon-bar3 {
+    transform: translate(0, -9px) rotate(45deg);
+}
+
+header:has(~ .home) #nav-link-home {
+    background-size: 0 1px, 90% 1px;
+}
+
+header:has(~ .project-earth) #nav-link-project-earth {
+    background-size: 0 1px, 90% 1px;
+}
+
+header:has(~ .project-moon) #nav-link-project-moon {
+    background-size: 0 1px, 90% 1px;
+}
