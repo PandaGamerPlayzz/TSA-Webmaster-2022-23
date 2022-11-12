@@ -12,7 +12,6 @@
 .nav-bar ul {
     list-style-type: none;
     overflow: hidden;
-    /* background-color: #333333; */
 }
 
 .nav-bar li, .nav-menu-links li {
@@ -51,13 +50,20 @@
 }
 
 .nav-menu-links li {
-    margin-bottom: 1.5vw;
+    margin: 1em 0;
 }
 
 .nav-menu-links li > a {
     display: inline;
-    font-size: 2.5vw;
+    font-size: 150%;
     background-size: 90% var(--nav-menu-underline-height), 0 var(--nav-menu-underline-height);
+    transition: color 0.6s cubic-bezier(.19,1,.22,1);
+}
+
+.nav-menu-links li > hr {
+    margin-top: 5px;
+    height: 2px;
+    background-color: #ffffff;
 }
 
 .nav-bar li > a.nav-logo {
@@ -68,8 +74,8 @@
     background-size: 0 var(--nav-underline-height), 90% var(--nav-underline-height);
 }
 
-.nav-menu-links li > a:hover, .nav-menu-links li > a:focus {
-    background-size: 0 var(--nav-menu-underline-height), 90% var(--nav-menu-underline-height);
+.nav-menu-links li > a:hover {
+    color: #a8a8a8;
 }
 
 .nav-bar li:has(.hamburger-icon-container) {
@@ -122,10 +128,10 @@ header:has(~ .project-moon) .nav-bar #nav-link-project-moon {
 
 #nav-menu {
     position: fixed;
-    right: -35vw;
+    right: -375px;
     top: 0;
     height: 100vh;
-    width: 35vw;
+    width: 375px;
     background: hsl(0 0% 100% / 0.1);
     backdrop-filter: blur(1rem);
     transition: all 1s cubic-bezier(.19,1,.22,1);
@@ -143,12 +149,17 @@ header:has(~ .project-moon) .nav-bar #nav-link-project-moon {
 }
 
 .nav-menu-links {
-    text-align: center;
+    text-align: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-17px );
 }
 
 .nav-menu-links > ul {
     list-style-type: none;
     overflow: hidden;
+    width: 80%;
 }
 
 @media (orientation: landscape) {
@@ -167,14 +178,5 @@ header:has(~ .project-moon) .nav-bar #nav-link-project-moon {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-    }
-
-    .nav-menu-links li > a {
-        font-size: 3vh;
-    }
-
-    #nav-menu {
-        width: 90vw;
-        right: -130vw;
     }
 }

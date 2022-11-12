@@ -43,9 +43,9 @@ const NavBar = () => {
                 <div className="nav-menu-spacing"></div>
                 <div className="nav-menu-links">
                     <ul>
-                        <li><Link id="nav-link-project-earth" className="nav-menu-link" to={"/"}>Home</Link></li>
-                        <li><Link id="nav-link-project-earth" className="nav-menu-link" to={"/project-earth"}>Project Earth</Link></li>
-                        <li><Link id="nav-link-project-moon" className="nav-menu-link" to={"/project-moon"}>Project Moon</Link></li>
+                        <li><Link id="nav-link-project-earth" className="nav-menu-link" to={"/"}>Home</Link><hr /></li>
+                        <li><Link id="nav-link-project-earth" className="nav-menu-link" to={"/project-earth"}>Project Earth</Link><hr /></li>
+                        <li><Link id="nav-link-project-moon" className="nav-menu-link" to={"/project-moon"}>Project Moon</Link><hr /></li>
                     </ul>
                 </div>
             </div>       
