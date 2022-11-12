@@ -10,6 +10,12 @@ const NavBar = () => {
             if(!hamburger.classList.contains("hamburger-icon-container")) hamburger = hamburger.parentNode;
 
             hamburger.classList.toggle("hamburger-active");
+
+            let menu = document.getElementById("nav-menu");
+            menu.classList.toggle("menu-active");
+
+            let body = document.getElementsByTagName("body")[0];
+            body.classList.toggle("disable-scroll");
         }
     }
 
@@ -32,7 +38,17 @@ const NavBar = () => {
                         </div>
                     </li>
                 </ul>
-            </nav>       
+            </nav>
+            <div id="nav-menu">
+                <div className="nav-menu-spacing"></div>
+                <div className="nav-menu-links">
+                    <ul>
+                        <li><Link id="nav-link-project-earth" className="nav-menu-link" to={"/"}>Home</Link></li>
+                        <li><Link id="nav-link-project-earth" className="nav-menu-link" to={"/project-earth"}>Project Earth</Link></li>
+                        <li><Link id="nav-link-project-moon" className="nav-menu-link" to={"/project-moon"}>Project Moon</Link></li>
+                    </ul>
+                </div>
+            </div>       
         </header>
     );
 }

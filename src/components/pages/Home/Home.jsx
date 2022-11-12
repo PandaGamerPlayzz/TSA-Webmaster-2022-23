@@ -4,8 +4,6 @@ import { motion } from 'framer-motion';
 import Styles from './Home.module.css';
 
 const Home = () => {
-    console.log(Styles)
-
     return (
         <motion.section className="content home">
             <motion.section id={Styles["section-1"]}>

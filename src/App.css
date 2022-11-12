@@ -18,17 +18,21 @@
 
 body {
     background-color: #000000;
-    overflow: hidden;
+    overflow: scroll;
     overflow-x: hidden;
 }
 
-body::after {
-    overflow: auto;
-    overflow-x: hidden;
+body.disable-scroll {
+    overflow: hidden;
+}
+
+header {
+    width: 100vw;
 }
 
 .sticky {
     position: fixed;
     top: 0;
-    width: 100%;
+    left: 0;
+    width: 100vw;
 }
