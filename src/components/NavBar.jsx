@@ -64,8 +64,8 @@ const NavBar = () => {
                 <div className="nav-menu-links">
                     <ul>
                         <li><Link id="nav-link-home" className="nav-menu-link" to={"/"}><span>00</span> Home</Link><hr /></li>
-                        <li><Link id="nav-link-project-earth" className="nav-menu-link" to={"/project-terra"}><span>01</span> Project Earth</Link><hr /></li>
-                        <li><Link id="nav-link-project-luna" className="nav-menu-link" to={"/project-luna"}><span>02</span> Project Moon</Link><hr /></li>
+                        <li><Link id="nav-link-project-earth" className="nav-menu-link" to={"/project-terra"}><span>01</span> Project Terra</Link><hr /></li>
+                        <li><Link id="nav-link-project-luna" className="nav-menu-link" to={"/project-luna"}><span>02</span> Project Luna</Link><hr /></li>
                     </ul>
                 </div>
             </div>       
