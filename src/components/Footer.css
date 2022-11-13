@@ -29,7 +29,7 @@
     background-color: #2d2d2d;
 }
 
-.footer-section-1 .footer-section-1-2 > div {
+.footer-section-1 .footer-section-1-1 > h1, .footer-section-1 .footer-section-1-2 > h1 {
     text-align: center;
     padding: 4.25vh;
     font-family: 'Raleway', sans-serif;
