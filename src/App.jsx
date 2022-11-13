@@ -12,6 +12,7 @@ const App = () => {
     return (
         <BrowserRouter>
             <NavBar />
+            <span id="top"></span>
             <AnimatedRoutes />
             <Footer />
         </BrowserRouter>

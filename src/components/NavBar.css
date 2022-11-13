@@ -129,11 +129,11 @@ header:has(~ .home) .nav-bar #nav-link-home {
     background-size: 0 var(--nav-underline-height), 90% var(--nav-underline-height);
 }
 
-header:has(~ .project-earth) .nav-bar #nav-link-project-earth {
+header:has(~ .project-terra) .nav-bar #nav-link-project-terra {
     background-size: 0 var(--nav-underline-height), 90% var(--nav-underline-height);
 }
 
-header:has(~ .project-moon) .nav-bar #nav-link-project-moon {
+header:has(~ .project-luna) .nav-bar #nav-link-project-luna {
     background-size: 0 var(--nav-underline-height), 90% var(--nav-underline-height);
 }
 
