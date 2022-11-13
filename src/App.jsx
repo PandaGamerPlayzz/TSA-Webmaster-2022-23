@@ -3,7 +3,7 @@ import { BrowserRouter } from 'react-router-dom';
 
 import AnimatedRoutes from './AnimatedRoutes.jsx';
 
-import NavBar from './components/NavBar.jsx';
+import Header from './components/Header.jsx';
 import Footer from './components/Footer.jsx';
 
 import './App.css';
@@ -11,8 +11,7 @@ import './App.css';
 const App = () => {
     return (
         <BrowserRouter>
-            <NavBar />
-            <span id="top"></span>
+            <Header />
             <AnimatedRoutes />
             <Footer />
         </BrowserRouter>

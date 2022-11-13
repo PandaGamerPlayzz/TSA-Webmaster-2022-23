@@ -40,7 +40,7 @@ const NavBar = () => {
     }
 
     return (
-        <header className="header">
+        <>
             <nav className="nav-bar sticky">
                 <ul>
                     <li className="nav-float-left"><Link id="nav-link-home" className="nav-logo" to={"/"}>Project Astra</Link></li>
@@ -69,7 +69,7 @@ const NavBar = () => {
                     </ul>
                 </div>
             </div>       
-        </header>
+        </>
     );
 }
 
