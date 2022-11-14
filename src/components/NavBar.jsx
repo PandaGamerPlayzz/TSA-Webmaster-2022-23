@@ -51,11 +51,13 @@ const NavBar = () => {
                         </ul>
                     </li>
                     <li className="nav-float-right">
-                        <div className="hamburger-icon-container" ref={hamburgerRef} onClick={event => toggleHamburger(event)}>
-                            <div className="hamburger-icon-bar1"></div>
-                            <div className="hamburger-icon-bar2"></div>
-                            <div className="hamburger-icon-bar3"></div>
-                        </div>
+                        <a href="javascript:void(0);">
+                            <div className="hamburger-icon-container" ref={hamburgerRef} onClick={event => toggleHamburger(event)}>
+                                <div className="hamburger-icon-bar1"></div>
+                                <div className="hamburger-icon-bar2"></div>
+                                <div className="hamburger-icon-bar3"></div>
+                            </div>
+                        </a>
                     </li>
                 </ul>
             </nav>
