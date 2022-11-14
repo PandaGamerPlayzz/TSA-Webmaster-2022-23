@@ -13,7 +13,7 @@ const AnimatedRoutes = () => {
     return (
         <AnimatePresence>
             <Routes location={location} key={location.pathname}>
-                <Route path="/" element={<Home />} />
+                <Route path="/" element={<><Home /><ProjectTerra /><ProjectLuna /></>} />
                 <Route path="/project-terra" element={<ProjectTerra />} />
                 <Route path="/project-luna" element={<ProjectLuna />} />
                 <Route path="*" element={<Page404 />} />
