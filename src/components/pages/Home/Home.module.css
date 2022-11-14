@@ -6,17 +6,7 @@
 }
 
 #section-1 > .background-image {
-    display: block;
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
     background-image: url(https://images.unsplash.com/photo-1505506874110-6a7a69069a08);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    left: 0;
-    top: 0;
-    z-index: -1;
 }
 
 #section-1-title {
