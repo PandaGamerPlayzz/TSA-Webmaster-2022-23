@@ -19,6 +19,10 @@
     transition: background-color 0.125s linear;
 }
 
+.nav-menu-links .nav-menu-blank {
+    height: 30px;
+}
+
 .nav-bar .nav-center {
     position: absolute;
     top: 50%;
@@ -30,7 +34,7 @@
     float: left;
 }
 
-.nav-bar li.nav-float-left > #nav-link-home {
+.nav-bar li.nav-float-left > .nav-link-home {
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -131,15 +135,15 @@
     transform: translate(0, -9px) rotate(45deg);
 }
 
-header:has(~ .project-terra) .nav-bar #nav-link-project-terra {
+header:has(~ .project-terra) .nav-bar .nav-link-project-terra {
     background-size: 0 var(--nav-underline-height), 90% var(--nav-underline-height);
 }
 
-header:has(~ .project-luna) .nav-bar #nav-link-project-luna {
+header:has(~ .project-luna) .nav-bar .nav-link-project-luna {
     background-size: 0 var(--nav-underline-height), 90% var(--nav-underline-height);
 }
 
-header:has(~ .project-mars) .nav-bar #nav-link-project-mars {
+header:has(~ .project-mars) .nav-bar .nav-link-project-mars {
     background-size: 0 var(--nav-underline-height), 90% var(--nav-underline-height);
 }
 
