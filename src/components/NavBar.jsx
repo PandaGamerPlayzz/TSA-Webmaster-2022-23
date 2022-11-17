@@ -48,6 +48,7 @@ const NavBar = () => {
                         <ul>
                             <li className="nav-float-left"><Link id="nav-link-project-terra" to={"/project-terra"}><span>01</span> Project Terra</Link></li>
                             <li className="nav-float-left"><Link id="nav-link-project-luna" to={"/project-luna"}><span>02</span> Project Luna</Link></li>
+                            <li className="nav-float-left"><Link id="nav-link-project-mars" to={"/project-mars"}><span>03</span> Project Mārs</Link></li>
                         </ul>
                     </li>
                     <li className="nav-float-right">
@@ -66,6 +67,7 @@ const NavBar = () => {
                         <li><Link id="nav-link-home" className="nav-menu-link" to={"/"}><span>00</span> Home</Link><hr /></li>
                         <li><Link id="nav-link-project-earth" className="nav-menu-link" to={"/project-terra"}><span>01</span> Project Terra</Link><hr /></li>
                         <li><Link id="nav-link-project-luna" className="nav-menu-link" to={"/project-luna"}><span>02</span> Project Luna</Link><hr /></li>
+                        <li><Link id="nav-link-project-mars" className="nav-menu-link" to={"/project-mars"}><span>03</span> Project Mārs</Link><hr /></li>
                     </ul>
                 </div>
             </div>       
