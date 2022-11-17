@@ -10,6 +10,7 @@
 }
 
 .nav-bar ul {
+    position: relative;
     list-style-type: none;
     overflow: hidden;
 }
@@ -22,11 +23,16 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, calc(-50% - 3px));
 }
 
 .nav-bar li.nav-float-left {
     float: left;
+}
+
+.nav-bar li.nav-float-left > #nav-link-home {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .nav-bar li.nav-float-right {
@@ -125,15 +131,15 @@
     transform: translate(0, -9px) rotate(45deg);
 }
 
-header:has(~ .home) .nav-bar #nav-link-home {
-    background-size: 0 var(--nav-underline-height), 90% var(--nav-underline-height);
-}
-
 header:has(~ .project-terra) .nav-bar #nav-link-project-terra {
     background-size: 0 var(--nav-underline-height), 90% var(--nav-underline-height);
 }
 
 header:has(~ .project-luna) .nav-bar #nav-link-project-luna {
+    background-size: 0 var(--nav-underline-height), 90% var(--nav-underline-height);
+}
+
+header:has(~ .project-mars) .nav-bar #nav-link-project-mars {
     background-size: 0 var(--nav-underline-height), 90% var(--nav-underline-height);
 }
 
