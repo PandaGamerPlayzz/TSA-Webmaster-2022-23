@@ -2,7 +2,9 @@ import { motion } from 'framer-motion';
 
 import Section1 from './ProjectTerra.Section1.jsx';
 
-const ProjectTerra = () => {
+export const Tags = ["earth", "terra"];
+
+export const ProjectTerra = () => {
     return (
         <motion.section className="content project-terra">
             <Section1 />

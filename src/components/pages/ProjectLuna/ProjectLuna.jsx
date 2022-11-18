@@ -2,7 +2,9 @@ import { motion } from 'framer-motion';
 
 import Section1 from './ProjectLuna.Section1.jsx';
 
-const ProjectLuna = () => {
+export const Tags = ["moon", "luna"];
+
+export const ProjectLuna = () => {
     return (
         <motion.section className="content project-luna">
             <Section1 />
