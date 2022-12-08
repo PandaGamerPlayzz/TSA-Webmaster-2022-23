@@ -7,7 +7,7 @@ import './Footer.css';
 import Splash from '../data/Splash.json';
 
 function randomSplash() {
-    return Splash[Math.floor(Math.random() * Splash.length)]
+    return Splash[Math.floor(Math.random() * Splash.length)];
 }
 
 const Footer = () => {
